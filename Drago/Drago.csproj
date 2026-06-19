@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Version>1.0.0</Version>
+    <Company>micio</Company>
+    <Description>Drago's official app.</Description>
+    <Copyright>Copyright © 2026 micio. All rights reserved.</Copyright>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <PackageIcon>Dragoico.png</PackageIcon>
+    <ApplicationIcon>Dragoico.ico</ApplicationIcon>
+    <FileVersion>1.0</FileVersion>
+    <NeutralLanguage>ko-KR</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Dragoico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\Downloads\Dragoico.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

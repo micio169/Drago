@@ -1,0 +1,43 @@
+﻿<Window x:Class="Drago.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drago"
+        mc:Ignorable="d"
+Title="Drago - 설정" Height="260" Width="360" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#F9F9F9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15">
+            <TextBlock Text="번역할 언어:" Width="80" VerticalAlignment="Center" FontWeight="Bold"/>
+            <ComboBox x:Name="ComboLanguage" Width="220" Height="25" SelectedIndex="0">
+                <ComboBoxItem Content="한국어 (KO)"/>
+                <ComboBoxItem Content="영어 (EN)"/>
+                <ComboBoxItem Content="일본어 (JA)"/>
+                <ComboBoxItem Content="스페인어 (ES)"/>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,15">
+            <TextBlock Text="지정 단축키:" Width="80" VerticalAlignment="Center" FontWeight="Bold"/>
+            <ComboBox x:Name="ComboHotkey" Width="220" Height="25" SelectedIndex="0" SelectionChanged="ComboHotkey_SelectionChanged">
+                <ComboBoxItem Content="F9"/>
+                <ComboBoxItem Content="F10"/>
+                <ComboBoxItem Content="F11"/>
+                <ComboBoxItem Content="ScrollLock"/>
+            </ComboBox>
+        </StackPanel>
+
+        <Border Grid.Row="2" Background="#EAEAEA" CornerRadius="5" Padding="12,10,12,10" VerticalAlignment="Stretch">
+            <TextBlock Text="원하는 글자를 드래그한 상태에서 위 단축키를 누르면 그 자리에 즉시 번역되어 채워집니다!" 
+                       TextWrapping="Wrap" FontSize="11.5" Foreground="#555555" LineHeight="16" VerticalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>
