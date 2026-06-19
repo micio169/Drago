@@ -1,0 +1,42 @@
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.useruser
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Release]/
+[Re]leasePublic/
+x64/
+x86/
+[Aa][Rm]/
+[Aa][Rm]64/
+bld/
+[Bi]n/
+[Oo]bj/
+Log/
+Logs/
+
+## Visual Studio 2015/2017/2019/2022 cache stage
+.vs/
+html/
+# Generated files
+*.nuget.props
+*.nuget.targets
+
+## Visual Studio Product Insiders
+*.axuser
+
+## Rider / JetBrains Profile 
+.idea/
+
+## Windows Image caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
